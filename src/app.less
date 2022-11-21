@@ -1,0 +1,14 @@
+
+.f-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.f-ellipsis(@num) {
+  display: -webkit-box; /* 将对象作为弹性伸缩盒子模型显示 */
+  -webkit-box-orient: vertical; /* 设置或检索伸缩盒对象的子元素的排列方式 */
+  -webkit-line-clamp: @num; /* 2行，只有 webkit内核支持 */
+  word-break: break-all; /* 纯英文换行 */
+  overflow: hidden;
+}

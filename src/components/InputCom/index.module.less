@@ -1,0 +1,45 @@
+.input_section {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: flex-start;
+  height: 110px;
+  padding: 20px 0;
+  background: #fff;
+}
+
+.input_input {
+  z-index: 2000;
+  width: 580px;
+  height: 110px !important;
+  padding-left: 35px;
+  margin-top: 12px;
+  background: #fff;
+}
+
+:global {
+  .taro-textarea {
+    font-size: 28px;
+  }
+  taro-textarea-core {
+    height: auto;
+  }
+}
+
+.btnView {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 170rpx;
+  height: 120rpx;
+
+  .btn {
+    height: 60px;
+    font-size: 24px;
+    color: white;
+    background: rgb(11, 199, 105);
+  }
+}

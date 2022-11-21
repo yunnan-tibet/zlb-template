@@ -1,0 +1,90 @@
+.list {
+  display: flex;
+  padding: 24px 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  color: #333333;
+  background: #fff;
+  border-bottom: 2px solid #f1f1f1;
+
+  .imgWrapper {
+    position: relative;
+    width: 144px;
+    height: 88px;
+    border-radius: 8px;
+    border: 2px solid #E8E9EC;
+    overflow: hidden;
+    .cover {
+      width: 144px;
+      height: 88px;
+    }
+    .status {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 36px;
+      background: linear-gradient(135deg, #6FD1FF 0%, #3E7FFF 100%);
+      border-radius: 6px 0px 24px 0px;
+      font-size: 20px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: #FFFFFF;
+      line-height: 34px;
+      text-align: center;
+      padding: 0 12px 0 4px;
+      &.f-wait {
+        background: linear-gradient(135deg, #FFAB6E 0%, #FF794C 100%);
+      }
+      &.f-handled {
+        background: linear-gradient(135deg, #49E3BE 0%, #18A587 100%);
+      }
+    }
+  }
+
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    align-items: center;
+    .title {
+      font-size: 28px;
+      font-family: PingFangSC-Regular PingFang SC;
+      font-weight: 400;
+      color: #333333;
+      width: 348px;
+      text-overflow:ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .type {
+      font-size: 26px;
+      font-family: PingFangSC-Regular PingFang SC;
+      font-weight: 400;
+      color: #428FFC;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 12px;
+    }
+  }
+  .line {
+    font-size: 24px;
+    font-family: PingFangSC-Regular PingFang SC;
+    font-weight: 400;
+    color: #808DA1;
+  }
+  .rightTag {
+    width: 136px;
+    height: 44px;
+    line-height: 40px;
+    border: 2px solid #428FFC;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 26px;
+    font-family: PingFangSC-Regular PingFang SC;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #428FFC;
+  }
+}

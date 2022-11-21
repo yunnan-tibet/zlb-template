@@ -1,0 +1,120 @@
+.messageFormView {
+  // height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  // justify-content: space-between;
+  background-color: white;
+  .item{
+    margin-top: 40px;
+  }
+  .title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #363a44;
+  }
+
+  .desc {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    .icon {
+      margin-right: 8px;
+      font-size: 28px;
+      color: #ff4949;
+    }
+    .detail {
+      width: 172px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-size: 40px;
+      font-weight: 600;
+      color: #333;
+      white-space: nowrap;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  :global {
+    .at-list__item {
+      padding: 0;
+    }
+    .at-list__item .item-extra {
+      flex: 2;
+    }
+    .at-list__item .item-extra__info {
+      font-size: 36px;
+      color: #686b73;
+    }
+    .at-input {
+      padding: 0;
+      margin: 0;
+    }
+    .at-input input{
+      font-size: 36px;
+      color: #686b73;
+    }
+    
+    .at-input--disabled {
+      opacity: 1;
+    }
+    .at-input__title {
+      font-size: 40px;
+      font-weight: 600;
+      color: #363a44;
+    }
+    .at-list__item-extra {
+      max-width: inherit;
+      text-align: left;
+    }
+    .at-list__item-content {
+      flex: none;
+      width: 172px;
+      margin-right: 16px;
+    }
+    .at-list__item .item-content__info-title {
+      font-size: 40px;
+      font-weight: 600;
+      color: #363a44;
+    }
+    
+  }
+}
+
+.baseFont {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #333;
+}
+
+.placeholderCommon {
+  .baseFont();
+
+  color: #808da1;
+}
+
+.atTextarea {
+  // padding: 0;
+  margin-left: 10px;
+  border: none;
+
+  :global {
+    .at-textarea__textarea textarea {
+      .baseFont();
+    }
+  }
+
+  &.fIos {
+    position: relative;
+    top: -14px;
+  }
+}
+.btnStyle {
+  display: flex;
+  justify-content: center;
+}

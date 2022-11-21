@@ -1,0 +1,55 @@
+.sound {
+  .sound-loading,
+  .cancel-vadio-loading,
+  .sound-warning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 308px;
+    height: 308px;
+    background: rgba(51, 51, 51, 0.84);
+    border-radius: 16px;
+    .sound-loading-time,
+    .sound-loading-wain,
+    .sound-loading-time-hidden,
+    .sound-warning-wain {
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      opacity: 1;
+      color: #ffffff;
+    }
+    .sound-loading-time-hidden {
+      opacity: 0;
+    }
+    .sound-loading-icon {
+      width: 276px;
+      height: 68px;
+      object-fit: contain;
+      padding: 24px 0;
+    }
+    .sound-warning-icon {
+      width: 80px;
+      height: 80px;
+      margin-top: 12px;
+    }
+  }
+  .cancel-vadio-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #db1c3c;
+    .cancel-loading-icon {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      padding-bottom: 24px;
+      transform: rotate(270deg);
+    }
+  }
+}

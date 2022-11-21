@@ -1,0 +1,75 @@
+
+:global{
+  .mask {
+    position: fixed;
+    top: 0;
+    right:0;
+    bottom:0;
+    left: 0;
+    z-index: 1000;
+    background: #333;
+    opacity: 0.5;
+  }
+}
+.messageDetailView {
+  background-color: white;
+  
+  .info {
+    padding: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    .row {
+      display: flex;
+      align-items: flex-start;
+      padding: 16px 0;
+    }
+    .label {
+      flex: 1;
+      font-size: 40px;
+      font-weight: 600;
+      color: #363a44;
+      white-space: nowrap;
+    }
+    .value {
+      display: flex;
+      flex: 3;
+      flex-wrap: wrap;
+      font-size: 40px;
+      font-weight: 400;
+      color: #363a44;
+    }
+
+    .dff {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+      .acc {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      .label{
+        margin-right: 10px;
+        font-size: 36px;
+        font-weight: 400;
+        color:#686B73;
+      }
+      .num {
+        font-size: 36px;
+        font-weight: 400;
+        color:#686B73;
+      }
+    }
+  }
+
+  .commentView {
+    padding: 32px;
+  }
+}
+
+.lastBottom{
+  height: 60px;
+}

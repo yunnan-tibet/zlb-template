@@ -1,0 +1,68 @@
+.amCommentItemDom {
+    margin-bottom: 100px;
+    .title{
+      margin-bottom: 20px;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .comment {
+      display: flex;
+      margin-bottom: 40px;
+      background: white !important;
+      .img {
+        width: 104px;
+        height: 104px;
+        margin-right: 24px;
+        border-radius: 52px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+        font-size: 40px;
+        background-color: white;
+        .topView {
+          display: flex;
+          // flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .name {
+            color: #808da1;
+          }
+          .time {
+            margin-left: 8px;
+            color: #808da1;
+            white-space: nowrap;
+          }
+        }
+        .comment{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .huifu {
+          display: flex;
+          align-items: flex-start;
+          // width: 400px;
+          height: auto;
+          padding: 10px 20px;
+          background: #f9f9f9;
+          .nickName {
+            color: #808da1;
+            white-space: nowrap;
+            // overflow: hidden;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
+          }
+          .replyDesc {
+            // overflow: hidden;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
+            color: #333;
+            white-space: pre-wrap;
+          }
+        }
+      }
+    }
+  }
+  

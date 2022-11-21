@@ -1,0 +1,26 @@
+.wrapper {
+    position: fixed;
+    bottom: 210px;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    .btn {
+      width:90% ;
+      height: 96px;
+      font-size: calc(18px * 2);
+      font-weight: 400;
+      line-height: calc(48px * 2);
+      color: #fff;
+      background: #1492FF;
+      border-radius: 48px;
+
+      // 如果按钮被禁用了, 那么就改成这个颜色
+      &[aria-disabled='true'] {
+        background: #b3b5b9;
+      }
+    }
+  }

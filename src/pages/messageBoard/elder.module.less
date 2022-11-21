@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  background: #f6f7f8;
+}
+.messageBoard::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+.messageBoard {
+  height: 100vh;
+  overflow-y: hidden;
+  .listBottom {
+    height: 100px;
+  }
+
+  .selectDate {
+    display: none;
+  }
+
+  .images {
+    width: 100%;
+    height: 368px;
+    margin-bottom: -10px;
+  }
+
+  .buttonView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 176px;
+    background: #f6f7f8;
+  }
+  .button {
+    width: 320px;
+    border-radius: 80px;
+  }
+
+  .list {
+    padding: 32px;
+    margin: 16px 32px;
+    color: #000;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 8px 0 rgba(66, 121, 244, 0.16);
+  }
+
+  .icon {
+    width: 84px;
+    height: 84px;
+    margin-right: 24px;
+    border-radius: 50%;
+  }
+  .row {
+    // padding: 20px 0;
+    background: white;
+  }
+
+  .contentRow {
+    justify-content: space-between;
+    width: 522px;
+  }
+  .contentLine {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 32px;
+  }
+
+  .reply {
+    margin-top: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #808da1;
+  }
+
+  .fontNormalSize {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .content {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-size: 24px;
+    font-weight: 400;
+    color: #2b333f;
+  }
+
+  .fontSmallSize {
+    float: right;
+    font-size: 24px;
+    font-weight: 400;
+    color: #808da1;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 32px 0;
+    text-align: center;
+    background: #e7f2ff;
+    opacity: 0.57;
+  }
+
+  .text {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .tel {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3667e8;
+  }
+  .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  :global {
+    .at-tabs__item {
+      font-size: 44px;
+    }
+    .at-list__item .item-extra__info {
+      font-size: 40px;
+    }
+
+    .at-list {
+      width: 90%;
+      margin: 0 auto;
+      background: #f9f9f9;
+      border-radius: 48px;
+    }
+    .at-list__item-container {
+      display: block;
+    }
+    .at-list__item-extra {
+      display: flex;
+      max-width: none;
+    }
+    .at-tabs__item-underline {
+      background: #f6f7f8;
+    }
+    .at-tabs__item--active .at-tabs__item-underline {
+      right: 0;
+      width: 50%;
+      height: 5px;
+      margin: 0 auto;
+      background-color: #3667e8;
+    }
+  }
+}

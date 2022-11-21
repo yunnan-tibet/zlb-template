@@ -1,0 +1,103 @@
+.pointGetModal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 111;
+  .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+    display: flex;
+    flex-direction: column;
+    width: 516px;
+    height: 456px;
+    align-items: center;
+    background: linear-gradient(135deg, #FFFBF3 0%, #FFF7EA 100%);
+    border-radius: 32px;
+
+    .round {
+      position: absolute;
+      top: -100px;
+      z-index: 111;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 232px;
+      height: 232px;
+      background: url('https://szzw001.oss-cn-hangzhou.aliyuncs.com/assetControl/app/point-icon.png') no-repeat center center;
+      background-size: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      .num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -20px;
+        height: 98px;
+        font-size: 68px;
+        font-family: SourceHanSansSC-Bold, SourceHanSansSC;
+        font-weight: bold;
+        color: #D75F3A;
+        line-height: 98px;
+        vertical-align: middle;
+
+        .addIcon {
+          position: relative;
+          top: -6px;
+          line-height: 98px;
+        }
+
+        .txt {
+          line-height: 98px;
+        }
+      }
+    }
+
+    .tit {
+      margin-top: 128px;
+      font-size: 40px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #363A44;
+      line-height: 56px;
+    }
+
+    .desc {
+      margin-top: 16px;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: #363A44;
+      line-height: 48px;
+    }
+
+    .btn {
+      margin-top: 48px;
+      width: 320px;
+      height: 72px;
+      background: #D19C4F;
+      border-radius: 48px;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: #FFFFFF;
+      line-height: 72px;
+      text-align: center;
+    }
+
+    .tip {
+      margin-top: 16px;
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: #808DA1;
+      line-height: 40px;
+    }
+  }
+}
